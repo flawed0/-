@@ -1,5 +1,7 @@
 #name = input('введи имя файла: ')
-name = 'frst'
-myfile = open(name+'.txt', 'w' )
-myfile.write('2\n')
-myfile.write('3')
+# myfile = open(name+'.txt', 'ab' )
+# myfile.write('')
+# myfile.close()
+
+myfile = open("1", 'rb')
+print(myfile.read())
