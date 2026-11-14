@@ -3,5 +3,13 @@
 # myfile.write('')
 # myfile.close()
 
-myfile = open("1", 'rb')
-print(myfile.read())
+data = []
+
+myfile = open("file.txt")
+for line in myfile:
+    data.append(line.strip())
+
+for i in range(len(data)):
+    if data[i] == "Алексей":
+        data[i] = "Александр"
+print(data)
